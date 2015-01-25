@@ -95,14 +95,14 @@ All these variables had their **mean** calculated per **subject** and per **acti
 
 Column Index | Name Index | Meaning
 -------------|------------|---------
- [1]  | "ActivityName" | Name of the **activity** performed during the measurement such as: Walking, Walking upstairs, Walking downstairs, Sitting, Standing or Laying.
- [2]  | "SubjectCode" | Code nmber of the **subject** who the measurements belong to.
+ [1]  | "ActivityName" | Name of the **Activity** performed during the measurement such as: **Walking**, **Walking upstairs**, **Walking downstairs**, **Sitting**, **Standing** or **Laying**.
+ [2]  | "SubjectCode" | Code number of the **Subject** who the measurements belong to.
  [3]  | "Time.BodyAcc.Mean.X" | Average of Time of **BodyAcc** on X axis
  [4]  | "Time.BodyAcc.Mean.Y" | Average of Time of **BodyAcc** on Y axis
  [5]  | "Time.BodyAcc.Mean.Z" | Average of Time of **BodyAcc** on Z axis
- [6]  | "Time.GravityAcc.Mean.X" | Average of Time of **GravityAcc ** on X axis
- [7]  | "Time.GravityAcc.Mean.Y" | Average of Time of **GravityAcc ** on Y axis
- [8]  | "Time.GravityAcc.Mean.Z" | Average of Time of **GravityAcc ** on Z axis
+ [6]  | "Time.GravityAcc.Mean.X" | Average of Time of **GravityAcc** on X axis
+ [7]  | "Time.GravityAcc.Mean.Y" | Average of Time of **GravityAcc** on Y axis
+ [8]  | "Time.GravityAcc.Mean.Z" | Average of Time of **GravityAcc** on Z axis
  [9]  | "Time.BodyAccJerk.Mean.X" | Average of Time of **BodyAccJerk** on X axis
 [10]  | "Time.BodyAccJerk.Mean.Y" | Average of Time of **BodyAccJerk** on Y axis
 [11]  | "Time.BodyAccJerk.Mean.Z" | Average of Time of **BodyAccJerk** on Z axis
