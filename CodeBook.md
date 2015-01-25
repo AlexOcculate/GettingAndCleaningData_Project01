@@ -32,14 +32,14 @@ and can be downloaded at:
 
 Directory Name         | File Name           |  File Description                | #Rows | #Columns
 -----------------------|---------------------|----------------------------------|-------|----------|
-UCI HAR Dataset/       | activity_labels.txt | activity labels file             |     6 |   2
-UCI HAR Dataset/       | features.txt        | features file                    |   561 |   2
-UCI HAR Dataset/test/  | subject_test.txt    | test subject file                |  2947 |   1
-UCI HAR Dataset/train/ | subject_train.txt   | train subject file               |  7352 |   1
-UCI HAR Dataset/test/  | X_test.txt          | test data measurements set file  |  2947 | 561
-UCI HAR Dataset/train/ | X_train.txt         | train data measurements set file |  7352 | 561
-UCI HAR Dataset/test/  | y_test.txt          | test label activity file         |  2947 |   1
-UCI HAR Dataset/train/ | y_train.txt         | train label activity file        |  7352 |   1
+UCI HAR Dataset/       | activity_labels.txt | **Activity** labels file             |     6 |   2
+UCI HAR Dataset/       | features.txt        | **Features** file                    |   561 |   2
+UCI HAR Dataset/test/  | subject_test.txt    | test **Subject** file                |  2947 |   1
+UCI HAR Dataset/train/ | subject_train.txt   | train **Subject** file               |  7352 |   1
+UCI HAR Dataset/test/  | X_test.txt          | test data **Measurements** set file  |  2947 | 561
+UCI HAR Dataset/train/ | X_train.txt         | train data **Measurements** set file |  7352 | 561
+UCI HAR Dataset/test/  | y_test.txt          | test **Label** activity file         |  2947 |   1
+UCI HAR Dataset/train/ | y_train.txt         | train **Label** activity file        |  7352 |   1
 
 ### The Perfomed Transformations:
 
