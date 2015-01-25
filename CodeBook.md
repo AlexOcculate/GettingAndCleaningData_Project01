@@ -60,7 +60,7 @@ The following are the general steps executed by the mentioned script:
 * Creates a new column **ActivityName** via decoding **Activity Number**
 * Result is returned as a data frame.  
 
-3) Get and Clean the **Measurament** data into a data frame.
+3) Get and Clean the **Measurement** data into a data frame.
 * Reads **"test/X_test.txt"**.
 * Reads **"train/X_train.txt"**.
 * Reads **"features.txt"** and normalizes its content.
@@ -84,31 +84,107 @@ The following are the general steps executed by the mentioned script:
         summary( df )
 ``` 
 
-### 2) Data Structure of the output files
+### Data Structure of the Output file:
 
-#### File name: **"tidyData.txt"**
-Number of columns:  88  
-Number of rows   : 180
+File Name         | Number of Columns | Number of Rows 
+------------------|-------------------|----------------
+tidyData.txt      |                88 |            180 
 
-All these variables had their mean calculated per subject and per activity in order to generate this output.
-
-Set of variables that were estimated:  
-
-    - **mean**: Mean value
-    - **std**: Standard deviation
-    - **meanFreq**: Weighted average of the frequency components to obtain a mean frequency  
-
-All the actual values in these measurements are the average of its occurrences along a period of time for a particular type of activity.
-
-If required the original data is available in the URL mentioned at the top of this document.
+All these variables had their **mean** calculated per **subject** and per **activity** in order to generate this output.
 
 
-
-
-
-
-
-
+Column Index | Name Index | Meaning
+-------------|------------|---------
+Column Index | Name Index | Meaning
+-------------|------------|---------
+ [1]  | "ActivityName" | Name of the **activity** performed during the measurement such as: Walking, Walking upstairs, Walking downstairs, Sitting, Standing or Laying.
+ [2]  | "SubjectCode" | Code nmber of the **subject** who the measurements belong to.
+ [3]  | "Time.BodyAcc.Mean.X" | Average of Time of **BodyAcc** on X axis
+ [4]  | "Time.BodyAcc.Mean.Y" | Average of Time of **BodyAcc** on Y axis
+ [5]  | "Time.BodyAcc.Mean.Z" | Average of Time of **BodyAcc** on Z axis
+ [6]  | "Time.GravityAcc.Mean.X" | Average of Time of **GravityAcc ** on X axis
+ [7]  | "Time.GravityAcc.Mean.Y" | Average of Time of **GravityAcc ** on Y axis
+ [8]  | "Time.GravityAcc.Mean.Z" | Average of Time of **GravityAcc ** on Z axis
+ [9]  | "Time.BodyAccJerk.Mean.X" | Average of Time of **BodyAccJerk** on X axis
+[10]  | "Time.BodyAccJerk.Mean.Y" | Average of Time of **BodyAccJerk** on Y axis
+[11]  | "Time.BodyAccJerk.Mean.Z" | Average of Time of **BodyAccJerk** on Z axis
+[12]  | "Time.BodyGyro.Mean.X" | Average of Time of **BodyGyro** on X axis
+[13]  | "Time.BodyGyro.Mean.Y" | Average of Time of **BodyGyro** on Y axis
+[14]  | "Time.BodyGyro.Mean.Z" | Average of Time of **BodyGyro** on Z axis
+[15]  | "Time.BodyGyroJerk.Mean.X" | Average of Time of **BodyGyroJerk** on X axis
+[16]  | "Time.BodyGyroJerk.Mean.Y" | Average of Time of **BodyGyroJerk** on Y axis
+[17]  | "Time.BodyGyroJerk.Mean.Z" | Average of Time of **BodyGyroJerk** on Z axis
+[18]  | "Time.BodyAccMag.Mean" | Average of Time of **BodyAccMag**
+[19]  | "Time.GravityAccMag.Mean" | Average of Time of **GravityAccMag**
+[20]  | "Time.BodyAccJerkMag.Mean" | Average of Time of **BodyAccJerkMag**
+[21]  | "Time.BodyGyroMag.Mean" | Average of Time of **BodyGyroMag**
+[22]  | "Time.BodyGyroJerkMag.Mean" | Average of Time of **BodyGyroJerkMag**
+[23]  | "Freq.BodyAcc.Mean.X" | Average of Frequence of **BodyAcc** on X axis
+[24]  | "Freq.BodyAcc.Mean.Y" | Average of Frequence of **BodyAcc** on Y axis
+[25]  | "Freq.BodyAcc.Mean.Z" | Average of Frequence of **BodyAcc** on Z axis
+[26]  | "Freq.BodyAcc.Mean.Freq.X" | Average of Frequence of **BodyAcc** on X axis
+[27]  | "Freq.BodyAcc.Mean.Freq.Y" | Average of Frequence of **BodyAcc** on Y axis
+[28]  | "Freq.BodyAcc.Mean.Freq.Z" | Average of Frequence of **BodyAcc** on Z axis
+[29]  | "Freq.BodyAccJerk.Mean.X" | Average of Frequence of **BodyAccJerk** on X axis
+[30]  | "Freq.BodyAccJerk.Mean.Y" | Average of Frequence of **BodyAccJerk** on Y axis
+[31]  | "Freq.BodyAccJerk.Mean.Z" | Average of Frequence of **BodyAccJerk** on Z axis
+[32]  | "Freq.BodyAccJerk.Mean.Freq.X" | Average of Frequence of **BodyAccJerk** on X axis
+[33]  | "Freq.BodyAccJerk.Mean.Freq.Y" | Average of Frequence of **BodyAccJerk** on Y axis
+[34]  | "Freq.BodyAccJerk.Mean.Freq.Z" | Average of Frequence of **BodyAccJerk** on Z axis
+[35]  | "Freq.BodyGyro.Mean.X" | Average of Frequence of **BodyGyro** on X axis
+[36]  | "Freq.BodyGyro.Mean.Y" | Average of Frequence of **BodyGyro** on Y axis
+[37]  | "Freq.BodyGyro.Mean.Z" | Average of Frequence of **BodyGyro** on Z axis
+[38]  | "Freq.BodyGyro.Mean.Freq.X" | Average of Frequence of **BodyGyro** on X axis
+[39]  | "Freq.BodyGyro.Mean.Freq.Y" | Average of Frequence of **BodyGyro** on Y axis
+[40]  | "Freq.BodyGyro.Mean.Freq.Z" | Average of Frequence of **BodyGyro** on Z axis
+[41]  | "Freq.BodyAccMag.Mean" | Average of Frequence of **BodyAccMag**
+[42]  | "Freq.BodyAccMag.Mean.Freq" | Average of Frequence of **BodyAccMag**
+[43]  | "Freq.BodyBodyAccJerkMag.Mean" | Average of Frequence of **BodyBodyAccJerkMag**
+[44]  | "Freq.BodyBodyAccJerkMag.Mean.Freq" | Average of Frequence of **BodyBodyAccJerkMag**
+[45]  | "Freq.BodyBodyGyroMag.Mean" | Average of Frequence of **BodyBodyGyroMag**
+[46]  | "Freq.BodyBodyGyroMag.Mean.Freq" | Average of Frequence of **BodyBodyGyroMag**
+[47]  | "Freq.BodyBodyGyroJerkMag.Mean" | Average of Frequence of **BodyBodyGyroJerkMag**
+[48]  | "Freq.BodyBodyGyroJerkMag.Mean.Freq" | Average of Frequence of **BodyBodyGyroJerkMag**
+[49]  | "Angle.TimeBodyAcc.Mean.Gravity" | Average of the Time of **BodyAcc** of the angle gravity
+[50]  | "Angle.TimeBodyAccJerk.Mean.Gravity.Mean" | Average of the Time of **BodyAccJerkMean** of the angle **Gravity**
+[51]  | "Angle.TimeBodyGyro.Mean.Gravity.Mean" | Average of the Time of **BodyGyroMean** of the angle **Gravity**
+[52]  | "Angle.TimeBodyGyroJerk.Mean.Gravity.Mean" | Average of the Time of **BodyGyroJerkMean** of the angle **Gravity**
+[53]  | "Angle.X.Gravity.Mean" | Average of the angle **Gravity** on axis X
+[54]  | "Angle.Y.Gravity.Mean" | Average of the angle **Gravity** on axis Y
+[55]  | "Angle.Z.Gravity.Mean" | Average of the angle **Gravity** on axis Z
+[56]  | "Time.BodyAcc.Std.X" | Standard Deviation of Time of **BodyAcc** on X axis
+[57]  | "Time.BodyAcc.Std.Y" | Standard Deviation of Time of **BodyAcc** on Y axis
+[58]  | "Time.BodyAcc.Std.Z" | Standard Deviation of Time of **BodyAcc** on Z axis
+[59]  | "Time.GravityAcc.Std.X" | Standard Deviation of Time of **GravityAcc** on X axis
+[60]  | "Time.GravityAcc.Std.Y" | Standard Deviation of Time of **GravityAcc** on Y axis
+[61]  | "Time.GravityAcc.Std.Z" | Standard Deviation of Time of **GravityAcc** on Z axis
+[62]  | "Time.BodyAccJerk.Std.X" | Standard Deviation of Time of **BodyAccJerk** on X axis
+[63]  | "Time.BodyAccJerk.Std.Y" | Standard Deviation of Time of **BodyAccJerk** on Y axis
+[64]  | "Time.BodyAccJerk.Std.Z" | Standard Deviation of Time of **BodyAccJerk** on Z axis
+[65]  | "Time.BodyGyro.Std.X" | Standard Deviation of Time of **BodyGyro** on X axis
+[66]  | "Time.BodyGyro.Std.Y" | Standard Deviation of Time of **BodyGyro** on Y axis
+[67]  | "Time.BodyGyro.Std.Z" | Standard Deviation of Time of **BodyGyro** on Z axis
+[68]  | "Time.BodyGyroJerk.Std.X" | Standard Deviation of Time of **BodyGyroJerk** on X axis
+[69]  | "Time.BodyGyroJerk.Std.Y" | Standard Deviation of Time of **BodyGyroJerk** on Y axis
+[70]  | "Time.BodyGyroJerk.Std.Z" | Standard Deviation of Time of **BodyGyroJerk** on Z axis
+[71]  | "Time.BodyAccMag.Std" | Standard Deviation of Time of **BodyAccMag**
+[72]  | "Time.GravityAccMag.Std" | Standard Deviation of Time of **GravityAccMag** 
+[73]  | "Time.BodyAccJerkMag.Std" | Standard Deviation of Time of **BodyAccJerkMag**
+[74]  | "Time.BodyGyroMag.Std" | Standard Deviation of Time of **BodyGyroMag**
+[75]  | "Time.BodyGyroJerkMag.Std" | Standard Deviation of Time of **BodyGyroJerkMag**
+[76]  | "Freq.BodyAcc.Std.X" | Standard Deviation of Frequence of **BodyAcc** on X axis
+[77]  | "Freq.BodyAcc.Std.Y" | Standard Deviation of Frequence of **BodyAcc** on Y axis
+[78]  | "Freq.BodyAcc.Std.Z" | Standard Deviation of Frequence of **BodyAcc** on Z axis
+[79]  | "Freq.BodyAccJerk.Std.X" | Standard Deviation of Frequence of **BodyAccJerk** on X axis
+[80]  | "Freq.BodyAccJerk.Std.Y" | Standard Deviation of Frequence of **BodyAccJerk** on Y axis
+[81]  | "Freq.BodyAccJerk.Std.Z" | Standard Deviation of Frequence of **BodyAccJerk** on Z axis
+[82]  | "Freq.BodyGyro.Std.X" | Standard Deviation of Frequence of **BodyGyro** on X axis
+[83]  | "Freq.BodyGyro.Std.Y" | Standard Deviation of Frequence of **BodyGyro** on Y axis
+[84]  | "Freq.BodyGyro.Std.Z" | Standard Deviation of Frequence of **BodyGyro** on Z axis
+[85]  | "Freq.BodyAccMag.Std" | Standard Deviation of Frequence of **BodyAccMag**
+[86]  | "Freq.BodyBodyAccJerkMag.Std" | Standard Deviation of Frequence of **BodyBodyAccJerkMag**
+[87]  | "Freq.BodyBodyGyroMag.Std" | Standard Deviation of Frequence of **BodyBodyGyroMag**
+[88]  | "Freq.BodyBodyGyroJerkMag.Std" | Standard Deviation of Frequence of **BodyBodyGyroJerkMag**
 
 
 [R]:http://www.r-project.org/
